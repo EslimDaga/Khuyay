@@ -548,8 +548,7 @@ img {
   position: relative;
 }
 .loading_overlay .loader_logo .logo {
-  width: 40px;
-  height: 40px;
+  width: 150px;
   -webkit-animation: text-focus-in 1.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both !important;
   -moz-animation: text-focus-in 1.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both !important;
   -o-animation: text-focus-in 1.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both !important;
@@ -1640,6 +1639,10 @@ img {
   background-color: #165df5 !important;
 }
 
+.bg-pink {
+  background-color: #E91979 !important;
+}
+
 .bg-gold {
   background-color: #ffce53 !important;
 }
@@ -1705,7 +1708,7 @@ img {
 }
 
 .bg-purple {
-  background-color: #6f5fa6 !important;
+  background-color: #5B2A87 !important;
 }
 
 .bg-lightgreen {
@@ -3165,7 +3168,7 @@ header .navbar .navbar-brand {
 header .navbar .navbar-brand .logo {
   vertical-align: bottom;
   margin-right: 0.5rem;
-  width: 27px;
+  width: 150px;
 }
 header .navbar .navbar-collapse {
   margin-top: 0.4rem;
@@ -3213,7 +3216,7 @@ header .navbar .navbar-collapse .nav_account.btn_demo3 .btn_sm_primary {
     font-size: 18px !important;
   }
   header .navbar-brand .logo {
-    width: 24px !important;
+    width: 150px !important;
   }
   header .navbar-collapse {
     margin-left: 0 !important;
@@ -3707,10 +3710,10 @@ header .navbar .navbar-collapse .nav_account.btn_demo3 .btn_sm_primary {
   margin-bottom: 30px;
 }
 .demo_1.banner_section .banner_title h1 {
-  color: #0b2238;
+  color: #5B2A87;
 }
 .demo_1.banner_section .banner_title p {
-  color: #6c7a87;
+  color: #FFFFFF;
 }
 .demo_1.banner_section .image_product {
   position: relative;
@@ -4048,7 +4051,7 @@ header .navbar .navbar-collapse .nav_account.btn_demo3 .btn_sm_primary {
   banner_demo7
 -----------------------------*/
 .banner_demo7 {
-  background: #ffe7aa !important;
+  background: #E91979 !important;
   border-radius: 12px !important;
   margin-top: 5.625rem;
   padding-top: 0 !important;
@@ -11805,10 +11808,10 @@ software_web
   background-color: #165df5;
 }
 .abo_company .emo:nth-of-type(2) .gq_item {
-  background-color: #e9f0ff;
+  background-color: #ceb1e7;
 }
 .abo_company .emo:nth-of-type(3) .gq_item {
-  background-color: #f6eef4;
+  background-color: #e6d8f3;
 }
 
 /*-----------------------------
