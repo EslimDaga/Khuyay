@@ -13845,9 +13845,10 @@ software_web
 }
 .grid_blog_avatar_button_action{
   display: flex;
+  justify-content: space-between;
 }
 .grid_blog_avatar_button_action_button{
-  width: 50%;
+  width: 45%;
 }
 .grid_blog_avatar .cover_blog {
   position: relative;
