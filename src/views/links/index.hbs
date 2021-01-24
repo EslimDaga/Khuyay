@@ -1,0 +1,65 @@
+<!-- Stat main -->
+<main data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+  <!-- Start blog_slider -->
+  <section class="section__stories blog_slider padding-t-12">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-12">
+          <div class="swip__stories">
+            <!-- Swiper -->
+            <div class="swiper-container blog-slider">
+              <div class="title_sections_inner">
+                <h2>Featured Stories</h2>
+              </div>
+              <div class="swiper-wrapper">
+              {{#each links}}
+                <div class="swiper-slide">
+                  <div class="grid_blog_avatar">
+                    <div class="cover_blog">
+                      <img src="../../assets/img/charity/002.jpg" alt="">
+                    </div>
+                    <div class="body_blog">
+                      <a href="#">
+                        <div class="person media">
+                          <img src="../../assets/img/persons/01.png" alt="">
+                          <div class="media-body">
+                            <div class="txt">
+                              <h3>{{ url }}</h3>
+                              <time>{{timeago created_at }}</time>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="{{ url }}" class="link_blog" target="_blank">
+                        <h4 class="title_blog">
+                          {{ title }}
+                        </h4>
+                        <p class="short_desc">
+                          {{ description }}
+                        </p>
+                        <div class="grid_blog_avatar_button_action">
+                          <a href="" class="btn btn-danger grid_blog_avatar_button_action_button" style="">Delete Link</a>
+                          <a href="" class="btn btn-primary grid_blog_avatar_button_action_button" style="">Edit Link</a>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <!-- End grid_blog_avatar -->
+                </div>
+              {{/each}}
+              </div>
+              <!-- Add Arrows -->
+              <div class="swiper-button-next">
+                <i class="tio chevron_right"></i>
+              </div>
+              <div class="swiper-button-prev">
+                <i class="tio chevron_left"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End. blog_slider -->
+</main>
