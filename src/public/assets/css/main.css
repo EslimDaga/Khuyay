@@ -13843,6 +13843,12 @@ software_web
 .grid_blog_avatar a {
   display: block;
 }
+.grid_blog_avatar_button_action{
+  display: flex;
+}
+.grid_blog_avatar_button_action_button{
+  width: 50%;
+}
 .grid_blog_avatar .cover_blog {
   position: relative;
   overflow: hidden;
