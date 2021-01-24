@@ -19,7 +19,7 @@
                       <img src="../../assets/img/charity/002.jpg" alt="">
                     </div>
                     <div class="body_blog">
-                      <a href="#">
+                      <a>
                         <div class="person media">
                           <img src="../../assets/img/persons/01.png" alt="">
                           <div class="media-body">
@@ -38,14 +38,40 @@
                           {{ description }}
                         </p>
                         <div class="grid_blog_avatar_button_action">
-                          <a href="" class="btn btn-danger grid_blog_avatar_button_action_button" style="">Delete Link</a>
-                          <a href="" class="btn btn-primary grid_blog_avatar_button_action_button" style="">Edit Link</a>
+                          <a href="/links/delete/{{ id }}" class="btn btn-danger grid_blog_avatar_button_action_button" style="">Delete Link</a>
+                          <a href="/links/edit/{{ id }}" class="btn btn-primary grid_blog_avatar_button_action_button" style="">Edit Link</a>
                         </div>
                       </a>
                     </div>
                   </div>
                   <!-- End grid_blog_avatar -->
                 </div>
+              {{else}}
+                <!-- Start Simple Contact -->
+                <section class="simplecontact_section connect_us margin-t-12 padding-py-7">
+                  <div class="container">
+                    <div class="row justify-content-md-center">
+                      <div class="col-md-10 col-lg-5 text-center">
+                        <div class="title_sections">
+                          <h2>Ready when you are</h2>
+                          <p>
+                            Let’s explore how we can apply blockchain technology to
+                            fit your business needs.
+                          </p>
+                          <a href="/links/add" class="btn rounded-8 c-white btn_md_primary ripple scale bg-orange-red">
+                            Agregar
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="circle-ripple">
+                      <div class="ripple ripple-1"></div>
+                      <div class="ripple ripple-2"></div>
+                      <div class="ripple ripple-3"></div>
+                    </div>
+                  </div>
+                </section>
+                <!-- End Simple Contact -->
               {{/each}}
               </div>
               <!-- Add Arrows -->
