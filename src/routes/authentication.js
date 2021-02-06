@@ -25,7 +25,7 @@ router.post("/signin", (req, res, next) => {
 });
 
 router.get("/profile", (req,res) => {
-  res.send("This is your Profile");
+  res.render("profile");
 });
 
 module.exports = router;
