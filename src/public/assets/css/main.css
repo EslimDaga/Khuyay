@@ -74,7 +74,7 @@ template.
     **Alert
     --------------------------
     **projects
-    --------------------------  
+    --------------------------
 */
 /*   =======
     helpers
@@ -3107,7 +3107,7 @@ img {
      --------------------------
      **header-black
      --------------------------
-     
+
 */
 /*-----------------------------
   Style header Default
@@ -3587,7 +3587,7 @@ header .navbar .navbar-collapse .nav_account.btn_demo3 .btn_sm_primary {
 }
 
 /*-----------------------------
-  header-black 
+  header-black
 -----------------------------*/
 .header-black .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
   color: #ffffff;
@@ -7903,7 +7903,7 @@ header .navbar .navbar-collapse .nav_account.btn_demo3 .btn_sm_primary {
     --------------------------
     ** software_web
     --------------------------
-    
+
 
 */
 /*-----------------------------
@@ -9879,8 +9879,8 @@ software_web
     --------------------------
     **creative_box_contact
     --------------------------
-    
-    
+
+
 
 */
 /*-----------------------------
@@ -10640,8 +10640,8 @@ software_web
     --------------------------
     **reviews_app_random
     --------------------------
-    
-    
+
+
 
 */
 /*-----------------------------
@@ -11350,7 +11350,7 @@ software_web
     **signup_full
     --------------------------
 
-    
+
 
 */
 /*-----------------------------
@@ -11485,16 +11485,39 @@ software_web
   display: grid;
   -ms-flex-align: center;
   align-items: center;
-  background-image: url("../img/inner/Fondo.jpg");
+  background-image: url("../img/flower_signin.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   height: 100%;
   position: relative;
-  /*-----------------------------
+}
+
+/*-----------------------------
   signup_two
 -----------------------------*/
+.signup_full_khuyay {
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-align: center;
+  align-items: center;
+  background-image: url("../img/flower.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: relative;
+
 }
+
+.pt-10 {
+  padding-top: 115px;
+}
+
+.pt-10-sign-up {
+  padding-top: 150px;
+}
+
 .signup_full .form_signup_one .item_group {
   background-color: #ffffff;
   border-radius: 8px;
@@ -11637,6 +11660,148 @@ software_web
   background-color: #ffce53;
 }
 
+.signup_full_khuyay .form_signup_one .item_group {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 2.188rem;
+}
+.signup_full_khuyay .form_signup_one .item_group .title_sign {
+  margin-bottom: 1.875rem;
+}
+.signup_full_khuyay .form_signup_one .item_group .title_sign h2 {
+  font-size: 25px;
+  font-weight: 600;
+  color: #0b2238;
+  margin-bottom: 8px;
+}
+.signup_full_khuyay .form_signup_one .item_group .title_sign p {
+  color: #6c7a87;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+.signup_full_khuyay .form_signup_one .item_group .title_sign p a {
+  color: #fd6b3b;
+}
+.signup_full_khuyay .form_signup_one .item_group .google_sign .btn_social {
+  width: 100%;
+  background-color: #f9f9f9;
+  height: 60px;
+  font-size: 16px;
+  -webkit-transition: 0.3s !important;
+  -moz-transition: 0.3s !important;
+  -o-transition: 0.3s !important;
+  -ms-transition: 0.3s !important;
+  transition: 0.3s !important;
+}
+.signup_full_khuyay .form_signup_one .item_group .google_sign .btn_social svg {
+  margin-right: 10px;
+  width: 25px;
+}
+.signup_full_khuyay .form_signup_one .item_group .google_sign .btn_social .tio {
+  vertical-align: middle;
+  font-size: 22px;
+  display: inline-block;
+  margin-right: 10px;
+}
+.signup_full_khuyay .form_signup_one .item_group .google_sign .btn_social:hover {
+  background-color: #f5f5f5;
+}
+.signup_full_khuyay .form_signup_one .item_group .btn_account {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+.signup_full_khuyay .item_brand {
+  margin: 1.874rem 0 0 0;
+}
+@media (max-width: 767px) {
+  .signup_full_khuyay .item_brand {
+    margin-bottom: 1.25rem;
+  }
+}
+.signup_full_khuyay .item_brand a {
+  display: inline-block;
+}
+.signup_full_khuyay .item_brand a img {
+  width: 27px;
+}
+.signup_full_khuyay .item_footer {
+  padding-bottom: 1.874rem;
+}
+@media (max-width: 767px) {
+  .signup_full_khuyay .item_footer {
+    margin-top: 1.25rem;
+  }
+}
+.signup_full_khuyay .item_footer p {
+  bottom: 0;
+  margin-bottom: 0;
+  color: #6c7a87;
+  font-size: 13px;
+}
+.signup_full_khuyay .item_footer p a {
+  color: #ffffff;
+}
+.signup_full_khuyay.bg_dark {
+  background-color: #000;
+  background-image: none;
+  padding: 2.5rem 0;
+}
+.signup_full_khuyay.bg_dark::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/workspace/bg-about.png");
+  background-size: 100%;
+  background-position-y: 90%;
+  position: fixed;
+  opacity: 0.25;
+}
+.signup_full_khuyay .signup_two .item_brand a {
+  display: inline-block;
+}
+.signup_full_khuyay .signup_two .item_brand a span {
+  font-size: 25px;
+  font-weight: 500;
+  color: #ffffff;
+  display: inline-block;
+  vertical-align: -webkit-baseline-middle;
+}
+.signup_full_khuyay .signup_two .list__point .item {
+  margin-bottom: 1.875rem;
+}
+.signup_full_khuyay .signup_two .list__point .item .icob {
+  width: 60px;
+  height: 60px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-right: 1.563rem;
+}
+.signup_full_khuyay .signup_two .list__point .item .icob .tio {
+  font-size: 20px;
+  color: #ffffff;
+}
+.signup_full_khuyay .signup_two .list__point .item p {
+  color: #ffffff;
+  margin-bottom: 0;
+}
+.signup_full_khuyay .signup_two .list__point .item:first-child .icob {
+  background-color: #165df5;
+}
+.signup_full_khuyay .signup_two .list__point .item:nth-child(2) .icob {
+  background-color: #58d5d3;
+}
+.signup_full_khuyay .signup_two .list__point .item:nth-child(3) .icob {
+  background-color: #ffce53;
+}
+
 /*
     CSS Table of Sections
     --------------------------
@@ -11664,7 +11829,7 @@ software_web
     --------------------------
     **about_developer
     --------------------------
-    
+
 */
 /*-----------------------------
   about_section
@@ -12070,7 +12235,7 @@ software_web
     --------------------------
     ** section__showcase
     --------------------------
-    
+
 
 */
 /*-----------------------------
@@ -13411,7 +13576,7 @@ software_web
     --------------------------
      ** news__workspace
     --------------------------
-    **blog_slider 
+    **blog_slider
     **grid_blog_avatar
     --------------------------
     **single-type_default
@@ -13426,7 +13591,7 @@ software_web
     --------------------------
     **sec_comments
     --------------------------
-    
+
 
 */
 /*-----------------------------
@@ -14829,7 +14994,7 @@ software_web
     --------------------------
     **counter_about
     --------------------------
-    
+
 
 */
 /*-----------------------------
@@ -15144,11 +15309,11 @@ software_web
   color: #6c7a87;
 }
 
-/*----------------------------- 
+/*-----------------------------
   widgets :
-  -- SSmedia_follow-w 
-  -- quotatio-w 
-  -- categories_list-w 
+  -- SSmedia_follow-w
+  -- quotatio-w
+  -- categories_list-w
   -- banner-w
 -----------------------------*/
 .widgets .SSmedia_follow-w {
@@ -16337,7 +16502,7 @@ software_web
 }
 /**
  * ----------------------------------------
- * animation heartbeat 
+ * animation heartbeat
  * ----------------------------------------
  */
 @-webkit-keyframes heartbeat {
@@ -18495,7 +18660,7 @@ html:not(.no-js) [data-aos="fade-up"] {
 }
 
 /*-----------------------------
-  custom-checkbox 
+  custom-checkbox
 -----------------------------*/
 .custom-checkbox .custom-control-input:focus {
   outline: 0;
@@ -19497,7 +19662,7 @@ html:not(.no-js) [data-aos="fade-up"] {
     --------------------------
     **sh_footer_email
     --------------------------
-    
+
 
 */
 /*-----------------------------
