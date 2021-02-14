@@ -23,39 +23,134 @@
           <li class="nav-item">
             <a class="nav-link" href="/">Home</a>
           </li>
-          <li class="nav-item dropdown dropdown-hover dropdown_full position-static">
-            <a class="nav-link dropdown-toggle dropdown_menu" href="#" id="navbarDropdown" role="button"
-              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <li class="nav-item dropdown dropdown-hover">
+            <a class="nav-link dropdown-toggle dropdown_menu" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
               Links
               <div class="icon_arrow">
                 <i class="tio chevron_right"></i>
               </div>
             </a>
-            <div class="dropdown-menu w-100 single-drop" aria-labelledby="navbarDropdown">
-              <div class="dropdown_menu_nav">
-                <!-- menu #1 -->
-                <div class="item_colume">
-                  <div class="sub_nav_menu">
-                    <ul class="nav_meun">
-                      <li>
-                        <a href="/links" class="dropdown-item">All Links</a>
-                      </li>
-                      <li>
-                        <a href="/links/add" class="dropdown-item">Add a Links</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
+            <div class="dropdown-menu single-drop sm_dropdown" aria-labelledby="navbarDropdown">
+              <ul class="dropdown_menu_nav">
+                <li class="dropdown-submenu dropdown-hover">
+                  <a class="dropdown-item dropdown-toggle dropdown_menu d-flex justify-content-between" href="/links">
+                    Links
+                    {{!-- <div class="icon_arrow">
+                      <i class="tio chevron_right"></i>
+                    </div> --}}
+                  </a>
+                  {{!-- <ul class="dropdown-menu sec-drop">
+                    <li><a class="dropdown-item" href="../blog/blog-classic.html">Blog: Classic</a></li>
+                    <li><a class="dropdown-item" href="../blog/blog-classic-three-columen.html">
+                        Blog: Classic 3 Column</a></li>
+                    <li><a class="dropdown-item" href="../blog/blog-creative.html">Blog: Creative</a></li>
+                    <li><a class="dropdown-item" href="../blog/blog-standard.html">Blog: Standard</a></li>
+                  </ul> --}}
+                </li>
+                <li class="dropdown-submenu dropdown-hover">
+                  <a class="dropdown-item dropdown-toggle dropdown_menu d-flex justify-content-between" href="/links/add">
+                    Add a Links
+                    {{!-- <div class="icon_arrow">
+                      <i class="tio chevron_right"></i>
+                    </div> --}}
+                  </a>
+                  {{!-- <ul class="dropdown-menu sec-drop">
+                    <li><a class="dropdown-item" href="single-blog.html">Creative</a></li>
+                    <li><a class="dropdown-item" href="single-featured-image.html">Featured Image</a></li>
+                    <li><a class="dropdown-item" href="single-background-color.html">Background Color</a>
+                    </li>
+                  </ul> --}}
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <div class="nav_account btn_demo2">
+          <a href="/logout" class="btn btn_sm_primary effect-letter rounded-8">
+            Cerrar Sesión
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+  </div>
+  <!-- end container -->
+</header>
+<!-- End header -->
+{{else}}
+<!-- Start header -->
+<header class="header-nav-center active-blue" id="myNavbar">
+  <div class="container">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light px-sm-0">
+      <a class="navbar-brand" href="../../index.html">
+        <img class="logo" src="../../assets/img/logo.svg" alt="logo" />
+      </a>
+
+      <button class="navbar-toggler menu ripplemenu" type="button" data-toggle="collapse"
+        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <svg viewBox="0 0 64 48">
+          <path d="M19,15 L45,15 C70,15 58,-2 49.0177126,7 L19,37"></path>
+          <path d="M19,24 L45,24 C61.2371586,24 57,49 41,33 L32,24"></path>
+          <path d="M45,33 L19,33 C-8,33 6,-2 22,14 L45,37"></path>
+        </svg>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto nav-pills">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item dropdown dropdown-hover">
+            <a class="nav-link dropdown-toggle dropdown_menu" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Links
+              <div class="icon_arrow">
+                <i class="tio chevron_right"></i>
               </div>
+            </a>
+            <div class="dropdown-menu single-drop sm_dropdown" aria-labelledby="navbarDropdown">
+              <ul class="dropdown_menu_nav">
+                <li class="dropdown-submenu dropdown-hover">
+                  <a
+                    class="dropdown-item dropdown-toggle dropdown_menu d-flex justify-content-between" href="/links">
+                    Links
+                    {{!-- <div class="icon_arrow">
+                      <i class="tio chevron_right"></i>
+                    </div> --}}
+                  </a>
+                  {{!-- <ul class="dropdown-menu sec-drop">
+                    <li><a class="dropdown-item" href="../blog/blog-classic.html">Blog: Classic</a></li>
+                    <li><a class="dropdown-item" href="../blog/blog-classic-three-columen.html">
+                        Blog: Classic 3 Column</a></li>
+                    <li><a class="dropdown-item" href="../blog/blog-creative.html">Blog: Creative</a></li>
+                    <li><a class="dropdown-item" href="../blog/blog-standard.html">Blog: Standard</a></li>
+                  </ul> --}}
+                </li>
+                <li class="dropdown-submenu dropdown-hover">
+                  <a
+                    class="dropdown-item dropdown-toggle dropdown_menu d-flex justify-content-between" href="/links/add">
+                    Add a Links
+                    {{!-- <div class="icon_arrow">
+                      <i class="tio chevron_right"></i>
+                    </div> --}}
+                  </a>
+                  {{!-- <ul class="dropdown-menu sec-drop">
+                    <li><a class="dropdown-item" href="single-blog.html">Creative</a></li>
+                    <li><a class="dropdown-item" href="single-featured-image.html">Featured Image</a></li>
+                    <li><a class="dropdown-item" href="single-background-color.html">Background Color</a>
+                    </li>
+                  </ul> --}}
+                </li>
+              </ul>
             </div>
           </li>
         </ul>
         <div class="nav_account btn_demo2">
           <a href="/signin" class="btn btn_sm_primary effect-letter rounded-8">
             Iniciar Sesión
-          </a>
-          <a href="/logout" class="btn btn_sm_primary effect-letter rounded-8">
-            Cerrar Sesión
           </a>
         </div>
       </div>
