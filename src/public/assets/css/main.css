@@ -9971,7 +9971,7 @@ software_web
 -----------------------------*/
 .connect_us {
   background-color: rgba(56, 24, 64, 0.05);
-  margin-top: 5rem;
+  /* margin-top: 5rem; */
 }
 .connect_us .title_sections {
   margin-bottom: 0;
