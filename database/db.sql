@@ -43,3 +43,21 @@ ALTER TABLE links
   MODIFY id INT(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT = 2;
 
 DESCRIBE links;
+
+-- LINKS VERSES
+CREATE TABLE verses (
+  id_verse INT(11) NOT NULL,
+  title VARCHAR(150) NOT NULL,
+  description TEXT,
+  user_id INT(11),
+  created_at timestamp NOT NULL DEFAULT current_timestamp,
+  CONSTRAINT fk_user_verses FOREIGN KEY(user_id) REFERENCES users(id)
+);
+
+ALTER TABLE verses
+  ADD PRIMARY KEY (id_verse);
+
+ALTER TABLE verses
+  MODIFY id_verse INT(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT = 2;
+
+DESCRIBE verses;
