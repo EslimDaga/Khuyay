@@ -1,14 +1,4 @@
 <body class="signup_full">
-  <!-- Start item_brand -->
-  {{!-- <div class="item_brand">
-    <div class="container">
-      <a href="index.html">
-        <img src="../../assets/img/logo-o.png" alt="">
-      </a>
-    </div>
-  </div> --}}
-  <!-- End. item_brand -->
-  <!-- Start form_signup_onek -->
   <section class="form_signup_one pt-10">
     <div class="container">
     {{> message}}
@@ -18,35 +8,35 @@
             <form action="/signin" class="row" method="POST">
               <div class="col-12">
                 <div class="title_sign">
-                  <h2>Sign in</h2>
-                  <p>New user? <a href="/signup">Create an account</a></p>
+                  <h2>Iniciar Sesión</h2>
+                  <p>¿Usuario nuevo? <a href="/signup">Crea una cuenta aquí</a></p>
                 </div>
               </div>
               <div class="col-12">
                 <div class="form-group">
-                  <label>Email address</label>
-                  <input type="text" name="username" class="form-control" placeholder="Username">
+                  <label>Nombre de Usuario</label>
+                  <input type="text" name="username" class="form-control" placeholder="Nombre de Usuario">
                 </div>
               </div>
               <div class="col-md-12">
                 <div class="form-group --password" id="show_hide_password">
-                  <label>Password</label>
+                  <label>Contraseña</label>
                   <div class="input-group">
-                    <input type="password" name="password" class="form-control" data-toggle="password" placeholder="Password"
+                    <input type="password" name="password" class="form-control" data-toggle="password" placeholder="Contraseña"
                       required="" />
                     <div class="input-group-prepend hide_show">
                       <a href=""><span class="input-group-text tio hidden_outlined"></span></a>
                     </div>
                   </div>
                 </div>
-                <a href="forgot-2.html" class="d-flex justify-content-end font-s-13 c-orange-red">Forgot Password?</a>
+                {{!-- <a href="forgot-2.html" class="d-flex justify-content-end font-s-13 c-orange-red">Forgot Password?</a> --}}
               </div>
               <div class="col-12">
                 <button type="submit" class="btn w-100 margin-t-3 btn_account bg-lightgreen c-white rounded-8">
-                  Sign in
+                  Iniciar Sesión
                 </button>
                 <div class="google_sign margin-t-3">
-                  <p class="text-center font-s-13 c-gray margin-my-3">Or Sign in with</p>
+                  <p class="text-center font-s-13 c-gray margin-my-3">o Iniciar sesión con</p>
                   <button type="button" class="btn btn_social rounded-8 mb-3">
                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
                       <g id="Group_6390" data-name="Group 6390" transform="translate(-595 -504)">
@@ -74,11 +64,11 @@
                         </g>
                       </g>
                     </svg>
-                    Continue with Google
+                    Continuar con Google
                   </button>
                   <button type="button" class="btn btn_social rounded-8 bg-blue c-white">
                     <i class="tio facebook_square"></i>
-                    Continue with Facebook
+                    Continuar con Facebook
                   </button>
                 </div>
               </div>
@@ -92,14 +82,8 @@
   <!-- Start item_footer -->
   <div class="item_footer">
     <div class="container">
-      <p>© 2020 <a href="https://themeforest.net/user/orinostu" target="_blank">Orino Studio.</a> All Right Reseved</p>
+      <p>© 2021 <a href="/" target="_blank"><strong>Khuyay.</strong></a> Todos los derechos reservados</p>
     </div>
   </div>
   <!-- End. item_footer -->
-  <!-- Back to top with progress indicator-->
-  <div class="prgoress_indicator">
-    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
-    </svg>
-  </div>
 </body>
