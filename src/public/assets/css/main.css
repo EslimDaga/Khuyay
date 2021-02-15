@@ -548,8 +548,7 @@ img {
   position: relative;
 }
 .loading_overlay .loader_logo .logo {
-  width: 40px;
-  height: 40px;
+  width: 200px;
   -webkit-animation: text-focus-in 1.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both !important;
   -moz-animation: text-focus-in 1.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both !important;
   -o-animation: text-focus-in 1.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both !important;
@@ -1544,6 +1543,10 @@ img {
   color: #165df5 !important;
 }
 
+.c-pink-khuyay {
+  color: #E91979 !important;
+}
+
 .c-gold {
   color: #ffce53 !important;
 }
@@ -1694,6 +1697,10 @@ img {
 
 .bg-orange-red {
   background-color: #fd6b3b !important;
+}
+
+.bg-pink-khuyay {
+  background-color: #E91979 !important;
 }
 
 .bg-currency-p {
@@ -3165,7 +3172,7 @@ header .navbar .navbar-brand {
 header .navbar .navbar-brand .logo {
   vertical-align: bottom;
   margin-right: 0.5rem;
-  width: 27px;
+  width: 170px;
 }
 header .navbar .navbar-collapse {
   margin-top: 0.4rem;
@@ -3213,7 +3220,7 @@ header .navbar .navbar-collapse .nav_account.btn_demo3 .btn_sm_primary {
     font-size: 18px !important;
   }
   header .navbar-brand .logo {
-    width: 24px !important;
+    width: 125px !important;
   }
   header .navbar-collapse {
     margin-left: 0 !important;
@@ -4114,6 +4121,7 @@ header .navbar .navbar-collapse .nav_account.btn_demo3 .btn_sm_primary {
 .banner_demo7 .ill_05 {
   width: 100%;
   margin: 2rem 0;
+  float: right;
 }
 
 /*-----------------------------
@@ -11511,7 +11519,7 @@ software_web
 }
 
 .pt-10 {
-  padding-top: 115px;
+  padding-top: 90px;
 }
 
 .pt-10-sign-up {
@@ -11596,11 +11604,15 @@ software_web
 .signup_full .item_footer p {
   bottom: 0;
   margin-bottom: 0;
-  color: #6c7a87;
+  color: #FFFFFF;
   font-size: 13px;
+  width: 295px;
+  background: #5B2A87;
+  padding: 7px;
+  border-radius: 6px;
 }
 .signup_full .item_footer p a {
-  color: #ffffff;
+  color: #E91979;
 }
 .signup_full.bg_dark {
   background-color: #000;
@@ -11793,13 +11805,13 @@ software_web
   margin-bottom: 0;
 }
 .signup_full_khuyay .signup_two .list__point .item:first-child .icob {
-  background-color: #165df5;
+  background-color: #5B2A87;
 }
 .signup_full_khuyay .signup_two .list__point .item:nth-child(2) .icob {
-  background-color: #58d5d3;
+  background-color: #5B2A87;
 }
 .signup_full_khuyay .signup_two .list__point .item:nth-child(3) .icob {
-  background-color: #ffce53;
+  background-color: #5B2A87;
 }
 
 /*
@@ -11967,7 +11979,7 @@ software_web
   margin-top: 0;
 }
 .abo_company .emo:nth-of-type(1) .gq_item {
-  background-color: #165df5;
+  background-color: #E91979;
 }
 .abo_company .emo:nth-of-type(2) .gq_item {
   background-color: #e9f0ff;
