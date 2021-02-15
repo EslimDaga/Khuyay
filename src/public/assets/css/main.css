@@ -362,7 +362,7 @@ img {
 .logo img {
   vertical-align: bottom;
   margin-right: 0.5rem;
-  width: 27px;
+  width: 170px;
 }
 
 /*-----------------------------
@@ -1249,7 +1249,7 @@ img {
 }
 @media (max-width: 767px) {
   .padding-t-12 {
-    padding-top: 3.125rem !important;
+    padding-top: 6.125rem !important;
   }
 }
 
@@ -4640,6 +4640,10 @@ header .navbar .navbar-collapse .nav_account.btn_demo3 .btn_sm_primary {
   padding-top: 10rem;
 }
 
+.pt_banner_inner_profile {
+  padding-top: 6rem;
+}
+
 /*-----------------------------
   banner_cotact_four
 -----------------------------*/
@@ -4681,7 +4685,7 @@ header .navbar .navbar-collapse .nav_account.btn_demo3 .btn_sm_primary {
 .banner_px_image {
   position: relative;
   overflow: hidden;
-  height: 400px;
+  height: 240px;
 }
 @media (max-width: 767px) {
   .banner_px_image {
@@ -8806,13 +8810,13 @@ software_web
   display: none;
 }
 .pricing_section .blocks_pricing div div:first-of-type .item__price {
-  background-color: #d0dfff;
+  background-color: #ee449380;
 }
 .pricing_section .blocks_pricing div div:nth-of-type(2) .item__price {
-  background-color: #fff4d8;
+  background-color: #5b2a87a3;
 }
 .pricing_section .blocks_pricing div div:nth-of-type(3) .item__price {
-  background-color: #ffe4db;
+  background-color: #ee449380;
 }
 .pricing_section .blocks_pricing .item__price {
   border-radius: 8px;
@@ -8850,7 +8854,6 @@ software_web
   margin-bottom: 1.5rem;
 }
 .pricing_section .blocks_pricing .item__price .logo_price .icon_gif {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='94' height='81' viewBox='0 0 94 81'%3E%3Cpath id='Polygon_60' data-name='Polygon 60' d='M60.134,0A18,18,0,0,1,75.7,8.966l13.056,22.5a18,18,0,0,1,0,18.068L75.7,72.034A18,18,0,0,1,60.134,81H33.866A18,18,0,0,1,18.3,72.034L5.242,49.534a18,18,0,0,1,0-18.068L18.3,8.966A18,18,0,0,1,33.866,0Z' fill='%23fff'/%3E%3C/svg%3E%0A");
   background-repeat: no-repeat;
   width: 94px;
   height: 81px;
@@ -8860,10 +8863,14 @@ software_web
 }
 .pricing_section .blocks_pricing .item__price .logo_price .icon_gif .gif {
   text-align: center;
-  width: 40px;
+  width: 100px;
+}
+.pricing_section .blocks_pricing .item__price .logo_price .icon_gif .gif_2 {
+  text-align: center;
+  width: 55px;
 }
 .pricing_section .blocks_pricing .item__price .name_p {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 600;
   color: #0b2238;
   margin-bottom: 1.875rem;
@@ -8894,7 +8901,7 @@ software_web
   font-weight: 400;
 }
 .pricing_section .blocks_pricing .item__price .info_price {
-  color: #6c7a87;
+  color: #FFFFFF;
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 0;
