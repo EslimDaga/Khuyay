@@ -1,19 +1,85 @@
 <main data-spy="scroll" data-target="#navbar-example2" data-offset="0">
   <!-- Start banner_about -->
-  <section class="pt_banner_inner">
+  <section class="pt_banner_inner_profile no-before banner_px_image blog-banner_without_image">
     <div class="container">
-      <div class="row justify-content-center text-center">
+      <div class="row">
         <div class="col-md-8 col-lg-6">
-          <div class="banner_title_inner margin-b-10">
-            {{> message}}
+          <div class="banner_title_inner margin-b-3">
             <h1 data-aos="fade-up" data-aos-delay="0">
-              Bienvenido {{user.firstname}} {{user.lastname}}
+              Perfil
             </h1>
-            <a href="/links" class="btn btn_sm_primary scale bg-blue c-white rounded-8">Save your links</a>
+            <p data-aos="fade-up" data-aos-delay="100">
+              Sección de datos personales
+            </p>
           </div>
         </div>
       </div>
     </div>
   </section>
   <!-- End banner_about -->
+  <!-- Start blog_masonry -->
+  <section class="pricing_section margin-b-10">
+    <div class="container">
+      <div class="blocks_pricing" id="monthly">
+        <div class="row justify-content-center">
+          <div class="col-md-6 col-lg-6">
+            <div class="item__price">
+              <div class="logo_price pt-4">
+                <div class="icon_gif">
+                  <img class="gif" src="../../assets/img/user.svg">
+                </div>
+              </div>
+              <hr>
+              <h5>Nombres:</h5>
+              <p class="info_price">{{user.firstname}}</p><br>
+              <h5>Apellidos:</h5>
+              <p class="info_price">{{user.lastname}}</p><br>
+              <h5>Nombre de usuario:</h5>
+              <p class="info_price">@{{user.username}}</p><br>
+              <h5>Correo Electronico</h5>
+              <p class="info_price">{{user.email}}</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6">
+            <div class="item__price popular">
+              <div class="logo_price">
+                <div class="icon_gif">
+                  <img class="gif_2" src="../../assets/img/file.svg" width="55">
+                </div>
+              </div>
+              <hr>
+              <h4>Biografía:</h4>
+              <p class="info_price">{{user.biography}}</p><br>
+              <h4>Numéro de celular:</h4>
+              <p class="info_price">{{user.phone}}</p><br>
+              <a href="#" class="btn btn_sm_primary p bg-pink-khuyay c-white rounded-12">
+                <i class="tio edit mr-1 align-middle font-s-16"></i>
+                <span>Editar Información</span>
+              </a>
+            </div>
+          </div>
+          {{!-- <div class="col-md-6 col-lg-4">
+            <div class="item__price">
+              <div class="logo_price">
+                <div class="icon_gif">
+                  <img class="gif" src="../../assets/img/gif/smiling_face_with_sunglasses.gif">
+                </div>
+              </div>
+              <h4 class="name_p">Enterprise</h4>
+              <div class="number">
+                <span class="n_price">129</span>
+                <span class="coins">$</span>
+                <span class="d-block per">Per User/Month Billed Annually</span>
+              </div>
+              <p class="info_price">
+                For businesses looking for deep customization and
+                advanced reports
+              </p>
+            </div>
+          </div> --}}
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End. blog_masonry -->
 </main>
