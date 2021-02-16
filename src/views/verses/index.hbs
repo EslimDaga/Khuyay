@@ -1,1 +1,97 @@
-Hello
+<main data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+  <!-- Start blog_slider -->
+  <section class="section__stories blog_slider padding-t-12">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-12">
+          <div class="swip__stories">
+            <!-- Swiper -->
+            <div class="swiper-container blog-slider">
+              <div class="title_sections_inner">
+                <h2>Mis versos</h2>
+              </div>
+              {{> message}}
+              <div class="container">
+                <div class="row">
+                  {{#each verses}}
+                  <div class="col-lg-4">
+                    <div class="swiper-slide">
+                      <div class="grid_blog_avatar">
+                        <div class="cover_blog">
+                          <img src="../../assets/img/charity/002.jpg" alt="" width="">
+                        </div>
+                        <div class="body_blog">
+                          <a></a>
+                            <div class="person media">
+                              <img src="../../assets/img/user.svg" alt="">
+                              <div class="media-body">
+                                <div class="txt">
+                                  <h3>{{ url }}</h3>
+                                  <time>{{timeago created_at }}</time>
+                                </div>
+                              </div>
+                            </div>
+                          </a>
+                          <a href="{{ url }}" class="link_blog" target="_blank">
+                            <h4 class="title_blog">
+                              {{ title }}
+                            </h4>
+                          </a>
+                          <p class="short_desc">
+                            {{ description }}
+                          </p>
+                          <div class="grid_blog_avatar_button_action pt-3">
+                            <a href="/links/delete/{{ id }}" class="btn btn-danger grid_blog_avatar_button_action_button" style="">Eliminar Verso</a>
+                            <a href="/links/edit/{{ id }}" class="btn btn-primary grid_blog_avatar_button_action_button" style="">Editar Verso</a>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End grid_blog_avatar -->
+                    </div>
+                  </div>
+                  {{else}}
+                  <!-- Start Simple Contact -->
+                  <section class="simplecontact_section connect_us padding-py-7 w-100">
+                    <div class="container">
+                      <div class="row justify-content-md-center">
+                        <div class="col-md-10 col-lg-5 text-center">
+                          <div class="title_sections">
+                            <h2>¿Aun no agregaste ningun verso?</h2>
+                            <p>
+                              Intenta dedicarle algo de amor a la persona que más amas.
+                            </p>
+                            <a href="/links/add" class="btn rounded-8 c-white btn_md_primary ripple scale bg-orange-red">
+                              Agregar
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="circle-ripple">
+                        <div class="ripple ripple-1"></div>
+                        <div class="ripple ripple-2"></div>
+                        <div class="ripple ripple-3"></div>
+                      </div>
+                    </div>
+                  </section>
+                  <!-- End Simple Contact -->
+                  {{/each}}
+                </div>
+              </div>
+              <div class="swiper-wrapper">
+
+              </div>
+              <!-- Add Arrows -->
+              <div class="swiper-button-next">
+                <i class="tio chevron_right"></i>
+              </div>
+              <div class="swiper-button-prev">
+                <i class="tio chevron_left"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End. blog_slider -->
+</main>
