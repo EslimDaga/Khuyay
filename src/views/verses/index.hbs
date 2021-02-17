@@ -2,13 +2,20 @@
   <!-- Start blog_slider -->
   <section class="section__stories blog_slider padding-t-12">
     <div class="container">
+      <div class="d-flex bd-highlight">
+        <div class="p-2 flex-grow-1 bd-highlight">
+          <h2>Mis versos</h2>
+        </div>
+        <div class="p-2 bd-highlight">
+          <a href="/verses/add" class="btn btn-primary bg-purple-khuyay text-white">Agregar verso</a>
+        </div>
+      </div>
       <div class="row justify-content-center">
         <div class="col-lg-12">
           <div class="swip__stories">
             <!-- Swiper -->
             <div class="swiper-container blog-slider">
               <div class="title_sections_inner">
-                <h2>Mis versos</h2>
               </div>
               {{> message}}
               <div class="container">
@@ -41,10 +48,15 @@
                             {{ description }}
                           </p>
                           <div class="grid_blog_avatar_button_action pt-3">
-                            <a href="/links/delete/{{ id }}" class="btn btn-danger grid_blog_avatar_button_action_button" style="">Eliminar Verso</a>
-                            <button type="button" class="btn btn-danger grid_blog_avatar_button_action_button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                              Ver verso
-                            </button>
+                            <a href="/verses/edit/{{ id_verse }}" class="btn btn-primary grid_blog_avatar_button_action_button option_button_action bg-pink-khuyay text-white">
+                              Editar
+                            </a>
+                            <a type="button" class="btn btn-danger grid_blog_avatar_button_action_button option_button_action bg-pink-khuyay text-white" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                              Eliminar
+                            </a>
+                            <a type="button" class="btn btn-success grid_blog_avatar_button_action_button option_button_action bg-pink-khuyay text-white" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                              Ver
+                            </a>
                           </div>
                         </div>
                       </div>
@@ -79,15 +91,6 @@
                   {{/each}}
                 </div>
               </div>
-              <div class="swiper-wrapper">
-              </div>
-              <!-- Add Arrows -->
-              <div class="swiper-button-next">
-                <i class="tio chevron_right"></i>
-              </div>
-              <div class="swiper-button-prev">
-                <i class="tio chevron_left"></i>
-              </div>
             </div>
           </div>
         </div>
@@ -118,3 +121,8 @@
   </div>
   <!-- End. blog_slider -->
 </main>
+<script>
+const getVerseById1 = () => {
+  console.log("DAGA")
+}
+</script>
