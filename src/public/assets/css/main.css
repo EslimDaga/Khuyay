@@ -1703,6 +1703,10 @@ img {
   background-color: #E91979 !important;
 }
 
+.bg-purple-khuyay {
+  background-color: #5B2A87 !important;
+}
+
 .bg-currency-p {
   background-color: #aa9bb3 !important;
 }
@@ -14033,6 +14037,9 @@ software_web
 }
 .grid_blog_avatar_button_action_button{
   width: 45%;
+}
+.option_button_action{
+  width: 95px;
 }
 .grid_blog_avatar .cover_blog {
   position: relative;
