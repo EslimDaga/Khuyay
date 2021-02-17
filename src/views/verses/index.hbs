@@ -26,7 +26,7 @@
                               <img src="../../assets/img/user.svg" alt="">
                               <div class="media-body">
                                 <div class="txt">
-                                  <h3>{{ url }}</h3>
+                                  <h3>{{ title }}</h3>
                                   <time>{{timeago created_at }}</time>
                                 </div>
                               </div>
@@ -42,7 +42,9 @@
                           </p>
                           <div class="grid_blog_avatar_button_action pt-3">
                             <a href="/links/delete/{{ id }}" class="btn btn-danger grid_blog_avatar_button_action_button" style="">Eliminar Verso</a>
-                            <a href="/links/edit/{{ id }}" class="btn btn-primary grid_blog_avatar_button_action_button" style="">Editar Verso</a>
+                            <button type="button" class="btn btn-danger grid_blog_avatar_button_action_button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                              Ver verso
+                            </button>
                           </div>
                         </div>
                       </div>
@@ -78,7 +80,6 @@
                 </div>
               </div>
               <div class="swiper-wrapper">
-
               </div>
               <!-- Add Arrows -->
               <div class="swiper-button-next">
@@ -93,5 +94,27 @@
       </div>
     </div>
   </section>
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          What follows is just some placeholder text for this modal dialog. Sipping on Rosé, Silver Lake sun, coming up all lazy.
+          It’s in the palm of your hand now baby. So we hit the boulevard. So make a wish, I'll make it like your birthday
+          everyday. Do you ever feel already buried deep six feet under? It's time to bring out the big balloons. You could've
+          been the greatest. Passport stamps, she's cosmopolitan. Your kiss is cosmic, every move is magic.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Understood</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- End. blog_slider -->
 </main>
