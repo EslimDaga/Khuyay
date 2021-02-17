@@ -1,0 +1,45 @@
+<!-- Stat main -->
+<main data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+  <!-- Start section_contact_four -->
+  <section class="section_contact_five contact_six margin-t-5 padding-t-7 margin-b-10">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="title_sections_inner">
+            <h2>Editar Verso</h2>
+          </div>
+          <div class="form_cc_four">
+            <form class="row" action="/verses/add" method="POST">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label>Titulo</label>
+                  <input type="text" value="{{ verses.title }}" name="title" class="form-control" placeholder="Titulo">
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label>Descripción</label>
+                  <textarea class="form-control" name="description" rows="7" placeholder="Descripcion">{{ verses.description }}</textarea>
+                </div>
+              </div>
+              <div class="col-12 d-md-flex justify-content-between margin-t-2">
+                <button type="submit" class="btn btn_md_primary bg-pink-khuyay rounded-8 c-white h-fit-content">
+                  Guardar
+                </button>
+                <a href="/verses" type="submit" class="btn btn_md_primary bg-purple-khuyay rounded-8 c-white h-fit-content">
+                  Volver
+                </a>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-lg-4 ml-auto">
+          <div class="title_sections_inner">
+            <h2>Add Url</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End. section_contact_four -->
+</main>
