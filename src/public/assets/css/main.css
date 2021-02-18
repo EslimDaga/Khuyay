@@ -316,9 +316,8 @@ img {
     margin-bottom: 2.5rem;
   }
 }
-
 .title_sections_inner {
-  margin-bottom: 3.125rem;
+  margin-bottom: 2.125rem;
 }
 .title_sections_inner .before_title {
   margin-bottom: 1.25rem;
@@ -14065,6 +14064,15 @@ software_web
 }
 .grid_blog_avatar .body_blog .person {
   margin-bottom: 20px;
+}
+.image-float-right {
+  float: right;
+}
+@media only screen and (max-width: 2000px) {
+  .image-float-right {
+    width: 450px;
+    padding-top: 55px;
+  }
 }
 .grid_blog_avatar .body_blog .person img {
   width: 35px;
