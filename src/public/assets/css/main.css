@@ -14074,6 +14074,11 @@ software_web
     padding-top: 55px;
   }
 }
+@media only screen and (max-width: 991px) {
+  .image-float-right {
+    display: none;
+  }
+}
 .grid_blog_avatar .body_blog .person img {
   width: 35px;
   height: 35px;
