@@ -19,6 +19,13 @@ router.get("/", async(req,res) => {
   res.render("verses/index", { verses });
 });
 
+router.get("/delete/:id_verse", async(req,res) => {
+  const { id_verse } = req.params;
+  await pool.query("DELETE FROM verses WHERE ID_VERSE = ?", [id_verse]);
+  req.flash("success","Verso eliminado satisfactoriamente");
+  res.redirect("/verses");
+});
+
 router.get("/edit/:id_verse", async(req,res) => {
   const { id_verse } = req.params;
   const verses = await pool.query("SELECT * FROM verses WHERE id_verse = ?", [id_verse]);
