@@ -8,10 +8,11 @@ router.get("/add", (req,res) => {
 
 router.post("/add", async(req,res) => {
   const { title, description } = req.body;
-  const newVerse = { title, description, user_id : req.user.id };
+  const image = req.file.filename;
+  const newVerse = { title, description, image, user_id : req.user.id };
   await pool.query("INSERT INTO verses SET ?", [newVerse]);
   req.flash("success", "Verso guardado satisfactoriamente");
-  res.redirect("/verses");
+  res.send("Render");
 });
 
 router.get("/", async(req,res) => {
@@ -33,20 +34,21 @@ router.get("/edit/:id_verse", async(req,res) => {
   res.render("verses/edit", { verses : verses[0] });
 });
 
+router.post("/edit/:id_verse", async (req, res) => {
+  const { id_verse } = req.params;
+  const { title, description } = req.body;
+  const image = req.file.filename;
+  const newVerse = { title, description, image };
+  req.flash("success", "Verso actualizado satisfaccioriamente");
+  await pool.query("UPDATE verses set ? WHERE id_verse = ?", [newVerse, id_verse]);
+  res.redirect("/verses");
+});
+
 router.get("/view/:id_verse", async(req,res) => {
   const { id_verse } = req.params;
   const verses = await pool.query("SELECT * FROM verses WHERE id_verse = ?", [id_verse]);
   console.log(verses);
   res.render("verses/view", { verses : verses[0] });
-});
-
-router.post("/edit/:id_verse", async(req,res) => {
-  const { id_verse } = req.params;
-  const { title, description } = req.body;
-  const newVerse = { title, description };
-  req.flash("success","Verso actualizado satisfaccioriamente");
-  await pool.query("UPDATE verses set ? WHERE id_verse = ?", [newVerse, id_verse]);
-  res.redirect("/verses");
 });
 
 module.exports = router;
