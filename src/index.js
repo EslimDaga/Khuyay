@@ -1,12 +1,14 @@
 const express = require("express");
 const morgan = require("morgan");
+const multer = require("multer");
+const { v4: uuidv4 } = require("uuid");
 const exphbs = require("express-handlebars");
 const path = require("path");
 const flash = require("connect-flash");
 const session = require("express-session");
 const MySQLStore = require("express-mysql-session");
-const { database } = require("./keys");
 const passport = require("passport");
+const { database } = require("./keys");
 
 //Initializations
 const app = express();
@@ -37,6 +39,13 @@ app.use(express.urlencoded({ extended : false }));
 app.use(express.json());
 app.use(passport.initialize());
 app.use(passport.session());
+const storage = multer.diskStorage({
+  destination : path.join(__dirname, "public/image/upload"),
+  filename : (req, file, cb, filename) => {
+    cb(null, uuidv4() + path.extname(file.originalname));
+  }
+});
+app.use(multer({ storage : storage }).single("image"));
 
 //Global variables
 app.use((req, res, next) => {
