@@ -9,7 +9,7 @@
             <h2>Agregar Verso</h2>
           </div>
           <div class="form_cc_four">
-            <form class="row" action="/verses/add" method="POST">
+            <form class="row" action="/verses/add" method="POST" enctype="multipart/form-data">
               <div class="col-md-12">
                 <div class="form-group">
                   <label>Titulo</label>
@@ -22,11 +22,23 @@
                   <textarea class="form-control" name="description" rows="7" placeholder="Descripcion"></textarea>
                 </div>
               </div>
+              <div class="col-md-12">
+                <div class="item_upload mb-3 mb-md-0">
+                  <div class="upload__file">
+                    <input type="file" name="image">
+                    <button type="button" class="btn btn_md_primary">
+                      <i class="tio attachment c-red"></i>
+                      Subir archivo
+                    </button>
+                  </div>
+                  <span class="my-auto">Tamaño máximo: 12 MB</span>
+                </div>
+              </div>
               <div class="col-12 d-md-flex justify-content-between margin-t-2">
                 <button type="submit" class="btn btn_md_primary bg-pink-khuyay rounded-8 c-white h-fit-content">
                   Guardar
                 </button>
-                <a href="/verses" type="submit" class="btn btn_md_primary bg-purple-khuyay rounded-8 c-white h-fit-content">
+                <a href="/verses" class="btn btn_md_primary bg-purple-khuyay rounded-8 c-white h-fit-content">
                   Volver
                 </a>
               </div>
