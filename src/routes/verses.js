@@ -2,6 +2,11 @@ const express = require("express");
 const pool = require("../database");
 const router = express.Router();
 
+router.get("/", async(req,res) => {
+  const verses = await pool.query("SELECT * FROM verses WHERE user_id = ?", [req.user.id]);
+  res.render("verses/index", { verses });
+});
+
 router.get("/add", (req,res) => {
   res.render("verses/add");
 });
@@ -12,13 +17,9 @@ router.post("/add", async(req,res) => {
   const newVerse = { title, description, image, user_id : req.user.id };
   await pool.query("INSERT INTO verses SET ?", [newVerse]);
   req.flash("success", "Verso guardado satisfactoriamente");
-  res.send("Render");
+  res.render("verses/index");
 });
 
-router.get("/", async(req,res) => {
-  const verses = await pool.query("SELECT * FROM verses WHERE user_id = ?", [req.user.id]);
-  res.render("verses/index", { verses });
-});
 
 router.get("/delete/:id_verse", async(req,res) => {
   const { id_verse } = req.params;
