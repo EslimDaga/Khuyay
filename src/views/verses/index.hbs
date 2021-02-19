@@ -25,7 +25,7 @@
                     <div class="swiper-slide">
                       <div class="grid_blog_avatar">
                         <div class="cover_blog">
-                          <img src="../../assets/img/charity/002.jpg" alt="" width="">
+                          <img src="/image/upload/{{ image }}" alt="" width="">
                         </div>
                         <div class="body_blog">
                           <a></a>
@@ -34,7 +34,7 @@
                               <div class="media-body">
                                 <div class="txt">
                                   <h3>{{ title }}</h3>
-                                  <time>{{timeago created_at }}</time>
+                                  <time>{{ timeago created_at }}</time>
                                 </div>
                               </div>
                             </div>
@@ -51,10 +51,10 @@
                             <a href="/verses/edit/{{ id_verse }}" class="btn btn-primary grid_blog_avatar_button_action_button option_button_action bg-pink-khuyay text-white">
                               Editar
                             </a>
-                            <a href="/verses/delete/{{ id_verse }}" type="button" class="btn btn-danger grid_blog_avatar_button_action_button option_button_action bg-pink-khuyay text-white" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                            <a href="/verses/delete/{{ id_verse }}" class="btn btn-danger grid_blog_avatar_button_action_button option_button_action bg-pink-khuyay text-white" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                               Eliminar
                             </a>
-                            <a href="/verses/view/{{ id_verse }}" type="button" class="btn btn-success grid_blog_avatar_button_action_button option_button_action bg-pink-khuyay text-white" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                            <a href="/verses/view/{{ id_verse }}" class="btn btn-success grid_blog_avatar_button_action_button option_button_action bg-pink-khuyay text-white" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                               Ver
                             </a>
                           </div>
