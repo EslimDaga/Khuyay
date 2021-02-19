@@ -1,65 +1,99 @@
 <!-- Stat main -->
 <main data-spy="scroll" data-target="#navbar-example2" data-offset="0">
-  <!-- Start banner_about -->
-  <section class="pt_banner_inner">
-    <div class="container">
-      <div class="row justify-content-center text-center">
-        <div class="col-md-8 col-lg-6">
-          <div class="banner_title_inner margin-b-10">
-            <h1 data-aos="fade-up" data-aos-delay="0">
-              Counter
-            </h1>
-            <div class="ui_item_dir" data-aos="fade-up" data-aos-delay="100">
-              <a class="active" href="countdown.html">ltr</a>
-              <a href="../../html-rtl/elements/countdown.html">RTL</a>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-  <!-- End banner_about -->
-
   <!-- Start Banner Section -->
-  <section class="banner_section">
+  <section class="pt_banner_inner banner_Sblog_default">
     <div class="container">
       <div class="row justify-content-center text-center">
-        <div class="col-lg-5">
-          <div class="title_sections_inner margin-b-5">
-            <h2>Default Style</h2>
-          </div>
-        </div>
-      </div>
-      <div class="row justify-content-md-center text-center">
-        <div class="col-md-10 col-lg-6">
-          <div class="Countdown-timer">
-            <div countdown data-date="Feb 15 2022 23:59:59">
-              <div class="item">
-                <span data-days>0</span>
-                <p>days</p>
-              </div>
-              <span class="cuot">:</span>
-              <div class="item">
-                <span data-hours>0</span>
-                <p>hours</p>
-              </div>
-              <span class="cuot">:</span>
-              <div class="item">
-                <span data-minutes>0</span>
-                <p>minutes</p>
-              </div>
-              <span class="cuot">:</span>
-              <div class="item">
-                <span data-seconds>0</span>
-                <p>seconds</p>
-              </div>
+        <div class="col-md-8 col-lg-7 my-auto">
+          <div class="banner_title_inner margin-b-8">
+            <div class="pb-4">
+              <img src="/assets/img/mail.svg" alt="" width="50">
             </div>
+            <h1>
+              {{ verses.title }}
+            </h1>
+          </div>
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb default justify-content-center">
+              <li class="breadcrumb-item"><a href="/">Inicio</a></li>
+              <li class="breadcrumb-item"><a href="/verses">Versos</a></li>
+              <li class="breadcrumb-item active" aria-current="page">{{ verses.title }}</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="cover_Sblog">
+            <img class="cover-parallax" src="../../assets/img/inner/04984.jpg" alt="">
           </div>
         </div>
       </div>
-
     </div>
   </section>
   <!-- End Banner -->
+  <section class="content-Sblog" data-sticky-container>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="fixSide_scroll" data-sticky-for="1023" data-margin-top="100">
+            <div class="item">
+              <div class="profile_user">
+                <img src="../../assets/img/user.svg" alt="">
+                <div class="txt">
+                  <h4>
+                    {{ user.firstname }}
+                  </h4>
+                  <time>{{timeago verses.created_at }}</time>
+                </div>
+                <a href="/verses/edit/{{ verses.id_verse }}" class="btn btn_profile c-white sweep_top sweep_letter rounded-pill bg-lightgreen">
+                  <div class="inside_item">
+                    <span data-hover="Editar">Editar</span>
+                    <span></span>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="share_socail">
+              <div class="title">Compartir</div>
+              <button class="btn icon" data-toggle="tooltip" data-placement="right" title="Facebook"
+                data-sharer="facebook" data-hashtag="hashtag" data-url="https://ellisonleao.github.io/sharer.js/">
+                <i class="tio facebook"></i>
+              </button>
+              <button class="btn icon" data-toggle="tooltip" data-placement="right" title="Twitter"
+                data-sharer="twitter" data-title="Checkout Sharer.js!" data-hashtags="awesome, sharer.js"
+                data-url="https://ellisonleao.github.io/sharer.js/">
+                <i class="tio twitter"></i>
+              </button>
+              <button class="btn icon" data-toggle="tooltip" data-placement="right" title="Whatsapp"
+                data-sharer="whatsapp" data-title="Checkout Sharer.js!"
+                data-url="https://ellisonleao.github.io/sharer.js/">
+                <i class="tio whatsapp_outlined"></i>
+              </button>
+              <button class="btn icon" data-toggle="tooltip" data-placement="right" title="Telegram"
+                data-sharer="telegram" data-title="Checkout Sharer.js!"
+                data-url="https://ellisonleao.github.io/sharer.js/" data-to="+44555-03564">
+                <i class="tio telegram"></i>
+              </button>
+              <button class="btn icon" data-toggle="tooltip" data-placement="right" title="Pinterest"
+                data-sharer="pinterest" data-url="https://ellisonleao.github.io/sharer.js/">
+                <i class="tio pinterest_circle"></i>
+              </button>
+              <button class="btn icon" data-toggle="tooltip" data-placement="right" title="skype" data-sharer="skype"
+                data-url="https://ellisonleao.github.io/sharer.js/" data-title="Checkout Sharer.js!">
+                <i class="tio skype"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="body_content">
+            <p class="txt_quotation">
+              "{{ verses.description }}"
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
