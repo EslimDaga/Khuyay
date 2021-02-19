@@ -9,7 +9,7 @@
             <h2>Editar Verso</h2>
           </div>
           <div class="form_cc_four">
-            <form class="row" action="/verses/add" method="POST">
+            <form class="row" action="/verses/edit/{{ verses.id_verse }}" method="POST">
               <div class="col-md-12">
                 <div class="form-group">
                   <label>Titulo</label>
@@ -19,7 +19,7 @@
               <div class="col-md-12">
                 <div class="form-group">
                   <label>Descripción</label>
-                  <textarea class="form-control" name="description" rows="7" placeholder="Descripcion">{{ verses.description }}</textarea>
+                  <textarea class="form-control" name="description" rows="15" placeholder="Descripcion">{{ verses.description }}</textarea>
                 </div>
               </div>
               <div class="col-12 d-md-flex justify-content-between margin-t-2">
