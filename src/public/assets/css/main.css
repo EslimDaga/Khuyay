@@ -317,7 +317,7 @@ img {
   }
 }
 .title_sections_inner {
-  margin-bottom: 2.125rem;
+  margin-bottom: 1.125rem;
 }
 .title_sections_inner .before_title {
   margin-bottom: 1.25rem;
@@ -4230,7 +4230,7 @@ header .navbar .navbar-collapse .nav_account.btn_demo3 .btn_sm_primary {
   font-size: 16px;
 }
 .banner_title_inner h1 {
-  font-size: 3.125rem;
+  font-size: 40px;
   font-weight: 700;
   margin-bottom: 0.625rem;
   margin-top: 0.625rem;
@@ -16007,7 +16007,7 @@ software_web
 .Countdown-timer .item p {
   color: #6c7a87;
   font-size: 18px;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
 }
 .Countdown-timer .cuot {
   position: absolute;
