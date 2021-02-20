@@ -8867,6 +8867,7 @@ software_web
 .pricing_section .blocks_pricing .item__price .logo_price .icon_gif .gif {
   text-align: center;
   width: 100px;
+  height: 100px;
 }
 .pricing_section .blocks_pricing .item__price .logo_price .icon_gif .gif_2 {
   text-align: center;
@@ -20427,6 +20428,12 @@ html:not(.no-js) [data-aos="fade-up"] {
 .sh_footer_email.bg_fitness {
   background-color: #06121e;
   padding-top: 340px;
+}
+
+.image-rounded-perfil {
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
 }
 
 /*# sourceMappingURL=main.css.map */
