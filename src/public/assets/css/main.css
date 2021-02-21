@@ -6071,7 +6071,7 @@ header .navbar .navbar-collapse .nav_account.btn_demo3 .btn_sm_primary {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 30rem !important;
+  /* padding-bottom: 30rem !important; */
 }
 @media (max-width: 767px) {
   .service_demo3 {
