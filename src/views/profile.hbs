@@ -26,7 +26,7 @@
             <div class="item__price">
               <div class="logo_price pt-4">
                 <div class="icon_gif">
-                  <img class="gif" src="../../assets/img/user.svg">
+                  <img class="gif" src="/image/upload/{{ user.image }}" style="border-radius: 50%;">
                 </div>
               </div>
               <hr>
@@ -52,7 +52,7 @@
               <p class="info_price">{{user.biography}}</p><br>
               <h4>Numéro de celular:</h4>
               <p class="info_price">{{user.phone}}</p><br>
-              <a href="#" class="btn btn_sm_primary p bg-pink-khuyay c-white rounded-12">
+              <a href="/profile/edit/{{ user.id }}" class="btn btn_sm_primary p bg-pink-khuyay c-white rounded-12">
                 <i class="tio edit mr-1 align-middle font-s-16"></i>
                 <span>Editar Información</span>
               </a>
