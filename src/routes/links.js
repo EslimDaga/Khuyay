@@ -3,6 +3,11 @@ const router = express.Router();
 const pool = require("../database");
 const { isLoggedIn } = require("../lib/auth");
 
+router.get("/", isLoggedIn, async (req, res) => {
+  const links = await pool.query("SELECT * FROM links WHERE user_id = ?", [req.user.id]);
+  res.render("links/index", { links });
+});
+
 router.get("/add", isLoggedIn,(req,res) => {
   res.render("links/add");
 });
@@ -13,11 +18,6 @@ router.post("/add", isLoggedIn,async(req,res) => {
   await pool.query("INSERT INTO links SET ?", [newLink]);
   req.flash("success", "Link Saved Successfully");
   res.redirect("/links");
-});
-
-router.get("/", isLoggedIn,async(req,res) => {
-  const links = await pool.query("SELECT * FROM links WHERE user_id = ?", [req.user.id]);
-  res.render("links/index", { links });
 });
 
 router.get("/delete/:id", isLoggedIn,async(req,res) => {
