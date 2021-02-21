@@ -1,0 +1,78 @@
+<main data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+  <!-- Start banner_about -->
+  <section class="pt_banner_inner_profile no-before banner_px_image blog-banner_without_image">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-lg-6">
+          <div class="banner_title_inner margin-b-3">
+            <h1 data-aos="fade-up" data-aos-delay="0">
+              Editar Perfil
+            </h1>
+            <p data-aos="fade-up" data-aos-delay="100">
+              Sección de datos personales
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End banner_about -->
+  <!-- Start blog_masonry -->
+  <section class="pricing_section margin-b-10">
+    <div class="container">
+      <div class="blocks_pricing" id="monthly">
+        <form action="/profile/edit/{{ user.id }}" method="POST" enctype="multipart/form-data">
+          <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-6">
+              <div class="item__price">
+                <div class="input-group mb-3 mt-3">
+                  <h5>Foto de perfil:</h5>
+                  <input type="file" class="ml-2" name="image">
+                </div>
+                <div class="form-group">
+                  <h5>Nombres:</h5>
+                  <input type="text" class="form-control" value="{{ user.firstname }}" name="firstname">
+                </div>
+                <div class="form-group">
+                  <h5>Apellidos:</h5>
+                  <input type="text" class="form-control" value="{{ user.lastname }}" name="lastname">
+                </div>
+                <div class="form-group">
+                  <h5>Nombre de usuario:</h5>
+                  <input type="text" class="form-control" value="{{ user.username }}" name="username">
+                </div>
+                <div class="form-group">
+                  <h5>Correo Electronico</h5>
+                  <input type="text" class="form-control" value="{{ user.email }}" name="email">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-6">
+              <div class="item__price popular">
+                <div class="logo_price">
+                  <div class="icon_gif">
+                    <img class="gif_2" src="../../assets/img/file.svg" width="55">
+                  </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                  <h4>Biografía:</h4>
+                  <textarea class="form-control" name="" id="" cols="30" rows="5" name="biography">{{ user.biography }}</textarea>
+                </div>
+                <div class="form-group">
+                  <h4>Numéro de celular:</h4>
+                  <input type="text" class="form-control" value="{{ user.phone }}" name="phone">
+                </div>
+                <button type="submit" class="btn btn_sm_primary p bg-pink-khuyay c-white rounded-12">
+                  <i class="tio save mr-1 align-middle font-s-16"></i>
+                  <span>Guardar Información</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- End. blog_masonry -->
+</main>
